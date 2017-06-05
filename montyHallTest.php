@@ -43,17 +43,11 @@ function runUnevenSimulations($numOfSims) {
 
         $valToRemove = 6 - $randNum - $winningNum;
 
-        //$winningKey = array_search($winningNum, $listOfNums);
         $chosenKey = array_search($randNum, $listOfNums);
         $keyToRemove = array_search($valToRemove, $listOfNums);
 
-        //unset($listOfNums[$winningKey]);
         unset($listOfNums[$chosenKey]);
         unset($listOfNums[$keyToRemove]);
-
-
-        //$valToRemove = array_pop($listOfNums);
-
         $randNum = array_pop($listOfNums);
 
 
